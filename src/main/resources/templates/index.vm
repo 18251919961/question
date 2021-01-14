@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这里是首页</title>
+    <script src="../js/jquery/jquery-1.11.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#h3").click(function () {
+                alert("test1");
+            });
+        })
+    </script>
+</head>
+<body>
+    <h3 id="h3">问题是：</h3>
+</body>
+</html>
