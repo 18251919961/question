@@ -1,0 +1,27 @@
+@charset "utf-8";
+table, td, th
+{
+	border:1px solid green;
+}
+th
+{
+	background-color:green;
+	color:white;
+}
+.div_name, .div_namedesc, .div_exe
+{
+	
+}
+div
+{
+	text-align: center;
+}
+textarea
+{
+	grid-row: auto / auto;
+    column-width: auto;
+    margin: 0px;
+    width: 400px;
+    height: 80px;
+}
+

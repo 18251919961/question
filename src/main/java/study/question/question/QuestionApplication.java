@@ -1,9 +1,11 @@
 package study.question.question;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("study.question.question.mapper")
 public class QuestionApplication {
 
 	public static void main(String[] args) {

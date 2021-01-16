@@ -7,7 +7,7 @@ import java.util.Date;
 @Data
 public class QuestionInfo
 {
-    long id;
+    long questionId;
     // 问题简述
     String questionDesc;
     // 问题详情s
@@ -15,7 +15,7 @@ public class QuestionInfo
     // 问题图片s
     String questionPictures;
     // 问题类型
-    Integer questionType;
+    Integer questionTypeId;
     // 问题分类
     Integer questionClassfy;
     // 子类问题ids
@@ -25,6 +25,6 @@ public class QuestionInfo
     // 答案集s
     String answserId;
 
-    Date startTime;
+    Date createTime;
     Date updateTime;
 }

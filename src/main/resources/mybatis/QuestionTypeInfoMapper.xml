@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="study.question.question.mapper.QuestionTypeInfoMapper">
+    <select id="query">
+        select * from single_stock_cfg
+        <where>
+            <if test="stockNo != null and stockNo != ''">
+                and stock_no = #{stockNo}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="questionTypeId" parameterType="study.question.question.model.QuestionTypeInfo">
+        insert into `question_type_info`(question_type_name,question_type_desc,create_time,update_time) values
+        (#{questionTypeName},#{questionTypeDesc},now(),now())
+    </insert>
+
+</mapper>

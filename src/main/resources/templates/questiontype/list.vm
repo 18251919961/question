@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/jquery/jquery-1.11.0.js"></script>
+    <script src="../../js/questiontypeinfo/questiontypeinfo.js"></script>
+    <link rel="stylesheet" href="../../css/table.css">
+</head>
+<body>
+<div><h2>类型插入</h2></div>
+
+<div class="div_name">
+    <input type="text" id="typename" placeholder="请输入类型"/>
+</div>
+<br/>
+<div class="div_namedesc">
+    <textarea class="desc" id="typedesc" placeholder="请输入类型简介"></textarea>
+</div>
+<br/>
+<div class="div_exe">
+    <input type="button" value="立即插入"/>
+</div>
+</body>
+</html>
